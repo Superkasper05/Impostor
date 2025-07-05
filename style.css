@@ -1,0 +1,10 @@
+diff --git a//dev/null b/style.css
+index 0000000000000000000000000000000000000000..3b53365adb91c9cba5ffef3f0b49d56c47dae1f8 100644
+--- a//dev/null
++++ b/style.css
+@@ -0,0 +1,4 @@
++body { font-family: Arial, sans-serif; text-align: center; margin-top: 2em; }
++.hidden { display: none; }
++label { margin-right: 0.5em; }
++button { margin-top: 1em; }
+
