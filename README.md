@@ -17,3 +17,12 @@ python3 -m http.server
 ```
 
 og deretter åpne `http://localhost:8000` i nettleseren din.
+
+## Legg til filene i ditt git-repo
+
+1. Initialiser et nytt repo med `git init` hvis du ikke allerede har et.
+2. Kopier filene `index.html`, `script.js`, `style.css` og `README.md` inn i mappen.
+3. Kjør `git add index.html script.js style.css README.md` for å legge dem til indeksen.
+4. Commit med `git commit -m "Legg til Impostor ordspill"`.
+5. Til slutt kan du pushe til en fjernserver med `git push` (for eksempel GitHub).
+
