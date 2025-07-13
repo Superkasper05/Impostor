@@ -22,3 +22,33 @@ index 0000000000000000000000000000000000000000..024b6ad38d02eadad4abc1721945097b
 +```
 +
 +og deretter åpne `http://localhost:8000` i nettleseren din.
+
+---
+
+## Travel Project
+
+Dette prosjektet består av en backend i Node.js/Express med Redis caching og integrasjon mot Amadeus, samt et React-basert frontend. Koden ligger i `backend/` og `frontend/`.
+
+### Oppsett
+
+1. Kopier `.env.example` i `backend/` og `frontend/` til `.env` og fyll inn API-nøkler.
+2. Start Redis lokalt.
+3. Installer avhengigheter og start backend:
+   ```bash
+   cd backend
+   npm install
+   npm start
+   ```
+4. I en annen terminal, installer avhengigheter og start frontend:
+   ```bash
+   cd frontend
+   npm install
+   npm start
+   ```
+5. Frontend er tilgjengelig på `http://localhost:3000` og proxyer API-kall til backend.
+
+### Deploy
+
+- Backend kan deployes på Heroku via `Procfile` eller Docker.
+- Frontend kan deployes på Netlify med `netlify.toml`.
+- GitHub Actions workflow (`.github/workflows/deploy.yml`) viser et eksempel på CI/CD.
